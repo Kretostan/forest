@@ -1,0 +1,54 @@
+@media (min-width: 768px) {
+	.hero-img {
+		.hero-text {
+			padding: 0 1.5em;
+		}
+	}
+
+	.main.b-wrapper {
+		.about-us {
+			.section-title {
+				font-size: 4rem;
+			}
+			.section-content {
+				display: flex;
+				flex-direction: row;
+
+				.section-text {
+					width: 75%;
+				}
+			}
+		}
+
+		.offert {
+			.offerts {
+				flex-direction: column;
+				padding: 3em 0;
+			}
+		}
+
+		.main-hero {
+			.hero-text {
+				font-size: 3.25rem;
+			}
+		}
+	}
+
+	.information {
+		.informations {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+
+			.logo {
+				i {
+					display: none;
+				}
+			}
+
+			.info {
+				flex-direction: column;
+			}
+		}
+	}
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forest</title>
+		<script src="https://kit.fontawesome.com/647b69dac7.js" crossorigin="anonymous"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="src/sass/main.css" />
+	</head>
+
+	<body>
+		<nav class="nav">
+			<div class="b-wrapper">
+				<div class="logo">
+					<i class="fa-solid fa-tree"></i>
+					<div class="title">Forest</div>
+				</div>
+				<div class="nav-items">
+					<a href="/index.html" id="home" class="nav-items__item">Home</a>
+					<a href="/index.html#aboutUs" id="about" class="nav-items__item">O nas</a>
+					<a href="/index.html#offert" id="offer" class="nav-items__item">Oferta</a>
+					<a href="/contact.html" id="contact" class="nav-items__item">Kontakt</a>
+				</div>
+
+				<button class="burger-btn">
+					<div class="burger-btn__box">
+						<div class="burger-btn__bars"></div>
+					</div>
+				</button>
+			</div>
+		</nav>
+
+		<nav class="nav-mobile">
+			<div class="nav-items-mobile">
+				<a href="/index.html" class="nav-items-mobile__item">Home</a>
+				<a href="/index.html#aboutUs" class="nav-items-mobile__item">O nas</a>
+				<a href="/offert.html" class="nav-items-mobile__item">Oferta</a>
+				<a href="/contact.html" class="nav-items-mobile__item">Kontakt</a>
+			</div>
+
+			<button class="burger-btn">
+				<div class="burger-btn__box">
+					<div class="burger-btn__bars"></div>
+				</div>
+			</button>
+		</nav>
+
+		<header class="hero-img">
+			<div class="hero-shadow"></div>
+			<div class="b-wrapper">
+				<div class="hero-text">
+					<p>Forest Group</p>
+					<span>Najpiękniejszy park w Twojej okolicy!</span>
+				</div>
+			</div>
+		</header>
+
+		<main class="main b-wrapper">
+			<section class="about-us" id="aboutUs">
+				<h2 class="section-title">o nas</h2>
+				<div class="section-content">
+					<img src="/src/img/waters-3095682_1280.jpg" alt="Tree on the lake" />
+					<div class="section-text">
+						<h3>Niezapomniane przygody</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem cupiditate, nobis
+							corporis nam libero expedita odit in quos, laudantium hic labore vitae dolorem, quisquam
+							officia a molestias architecto veniam nostrum deleniti accusamus temporibus maiores! Neque
+							fugiat, optio eius laboriosam voluptatem, provident quibusdam ab et iusto, nihil unde ut
+							asperiores veniam. libero expedita odit in quos, laudantium hic labore vitae dolorem,
+							quisquam officia a molestias
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<div class="main-hero">
+				<div class="hero-shadow"></div>
+				<div class="hero-text m-wrapper">
+					<span>Przygoda dla całej rodziny</span>
+				</div>
+			</div>
+
+			<section class="offert m-wrapper" id="offert">
+				<h2 class="section-title">oferta</h2>
+				<p>Wybierz jedną z naszych wspaniałych ofert!</p>
+				<div class="offerts main-page">
+					<div class="offerts-item">
+						<div class="offerts-item__title">Demo</div>
+						<p class="offerts-item__price">$0</p>
+						<ul class="offerts-item__list">
+							<li class="check">Opcja w pakiecie</li>
+							<li class="check">Opcja w pakiecie</li>
+							<li class="minus">Opcja poza pakietem</li>
+							<li class="minus">Opcja poza pakietem</li>
+							<li class="minus">Opcja poza pakietem</li>
+						</ul>
+						<button class="select">Wybierz</button>
+					</div>
+					<div class="offerts-item">
+						<div class="offerts-item__title">Standard</div>
+						<p class="offerts-item__price">$99</p>
+						<ul class="offerts-item__list">
+							<li class="check">Opcja w pakiecie</li>
+							<li class="check">Opcja w pakiecie</li>
+							<li class="check">Opcja w pakiecie</li>
+							<li class="minus">Opcja poza pakietem</li>
+							<li class="minus">Opcja poza pakietem</li>
+						</ul>
+						<button class="select">Wybierz</button>
+					</div>
+					<div class="offerts-item">
+						<div class="offerts-item__title">Premium</div>
+						<p class="offerts-item__price">$299</p>
+						<ul class="offerts-item__list">
+							<li class="check">Opcja w pakiecie</li>
+							<li class="check">Opcja w pakiecie</li>
+							<li class="check">Opcja w pakiecie</li>
+							<li class="check">Opcja w pakiecie</li>
+							<li class="check">Opcja w pakiecie</li>
+						</ul>
+						<button class="select">Wybierz</button>
+					</div>
+				</div>
+
+				<a href="/offert.html" class="more-offerts select">Zobacz więcej</a>
+			</section>
+
+			<section class="information">
+				<div class="informations">
+					<div class="logo">
+						<i class="fa-solid fa-tree"></i>
+						<div class="title">Forest</div>
+					</div>
+					<div class="info">
+						<div class="info__block">
+							<p class="block__title">O nas</p>
+							<p class="block__item">Historia</p>
+							<p class="block__item">Parki</p>
+							<p class="block__item">Opinie</p>
+						</div>
+						<div class="info__block">
+							<p class="block__title">Nasza firma</p>
+							<p class="block__item">Praca</p>
+							<p class="block__item">Kadry</p>
+							<p class="block__item">Zarząd</p>
+						</div>
+						<div class="info__block">
+							<p class="block__title">Dokumenty</p>
+							<p class="block__item">Wnioski</p>
+							<p class="block__item">Rezerwacje</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">&copy;<span class="footer__year"></span> Forest Group Company Ltd.</footer>
+
+		<script src="/src/js/main.js"></script>
+	</body>
+</html>

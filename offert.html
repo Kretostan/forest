@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Forest</title>
+		<script src="https://kit.fontawesome.com/647b69dac7.js" crossorigin="anonymous"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="dist/css/main-min.css" />
+	</head>
+
+	<body>
+		<nav class="nav">
+			<div class="b-wrapper">
+				<div class="logo">
+					<i class="fa-solid fa-tree"></i>
+					<div class="title">Forest</div>
+				</div>
+				<div class="nav-items">
+					<a href="/index.html" class="nav-items__item">Home</a>
+					<a href="/index.html#aboutUs" class="nav-items__item">O nas</a>
+					<a href="/index.html#offert" class="nav-items__item">Oferta</a>
+					<a href="/contact.html" class="nav-items__item">Kontakt</a>
+				</div>
+
+				<button class="burger-btn">
+					<div class="burger-btn__box">
+						<div class="burger-btn__bars"></div>
+					</div>
+				</button>
+			</div>
+		</nav>
+
+		<nav class="nav-mobile">
+			<div class="nav-items-mobile">
+				<a href="/index.html" class="nav-items-mobile__item">Home</a>
+				<a href="/index.html#aboutUs" class="nav-items-mobile__item">O nas</a>
+				<a href="/offert.html" class="nav-items-mobile__item">Oferta</a>
+				<a href="/contact.html" class="nav-items-mobile__item">Kontakt</a>
+			</div>
+
+			<button class="burger-btn">
+				<div class="burger-btn__box">
+					<div class="burger-btn__bars"></div>
+				</div>
+			</button>
+		</nav>
+
+		<header class="hero-img">
+			<div class="hero-shadow"></div>
+			<div class="b-wrapper">
+				<div class="hero-text">
+					<p>Forest Group</p>
+					<span>Najpiękniejszy park w Twojej okolicy!</span>
+				</div>
+			</div>
+		</header>
+
+		<main class="main b-wrapper">
+			<section class="offert m-wrapper" id="offert">
+				<h2 class="section-title">oferta</h2>
+				<p>Wybierz jedną z naszych wspaniałych ofert!</p>
+				<div class="offerts">
+					<div class="cheaper">
+						<div class="offerts-item">
+							<div class="offerts-item__title">Demo</div>
+							<p class="offerts-item__price">$0</p>
+							<ul class="offerts-item__list">
+								<li class="check">Opcja w pakiecie</li>
+								<li class="check">Opcja w pakiecie</li>
+								<li class="minus">Opcja poza pakietem</li>
+								<li class="minus">Opcja poza pakietem</li>
+								<li class="minus">Opcja poza pakietem</li>
+							</ul>
+							<button class="select">Wybierz</button>
+						</div>
+						<div class="offerts-item">
+							<div class="offerts-item__title">Standard</div>
+							<p class="offerts-item__price">$99</p>
+							<ul class="offerts-item__list">
+								<li class="check">Opcja w pakiecie</li>
+								<li class="check">Opcja w pakiecie</li>
+								<li class="check">Opcja w pakiecie</li>
+								<li class="minus">Opcja poza pakietem</li>
+								<li class="minus">Opcja poza pakietem</li>
+							</ul>
+							<button class="select">Wybierz</button>
+						</div>
+					</div>
+					<div class="more-expensive">
+						<div class="offerts-item">
+							<div class="offerts-item__title">Premium</div>
+							<p class="offerts-item__price">$299</p>
+							<ul class="offerts-item__list">
+								<li class="check">Opcja w pakiecie</li>
+								<li class="check">Opcja w pakiecie</li>
+								<li class="check">Opcja w pakiecie</li>
+								<li class="check">Opcja w pakiecie</li>
+								<li class="minus">Opcja poza pakietem</li>
+							</ul>
+							<button class="select">Wybierz</button>
+						</div>
+						<div class="offerts-item special">
+							<div class="offerts-item__title">Prestige</div>
+							<p class="offerts-item__price">$499</p>
+							<ul class="offerts-item__list">
+								<li class="check">Opcja w pakiecie</li>
+								<li class="check">Opcja w pakiecie</li>
+								<li class="check">Opcja w pakiecie</li>
+								<li class="check">Opcja w pakiecie</li>
+								<li class="check">Opcja w pakiecie</li>
+							</ul>
+							<button class="select">Wybierz</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="information">
+				<div class="informations m-wrapper">
+					<div class="logo">
+						<i class="fa-solid fa-tree"></i>
+						<div class="title">Forest</div>
+					</div>
+					<table>
+						<thead>
+							<tr>
+								<th>O nas</th>
+								<th>Nasza firma</th>
+								<th>Dokumenty</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Historia</td>
+								<td>Praca</td>
+								<td>Wnioski</td>
+							</tr>
+							<tr>
+								<td>Parki</td>
+								<td>Kadry</td>
+								<td>Rezerwacje</td>
+							</tr>
+							<tr>
+								<td>Opinie</td>
+								<td>Zarząd</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">&copy;<span class="footer__year"></span> Forest Group Company Ltd.</footer>
+
+		<script src="/src/main.js"></script>
+	</body>
+</html>

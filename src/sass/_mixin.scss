@@ -1,0 +1,40 @@
+@mixin heroImages($bgImg) {
+	background-image: url($bgImg);
+	background-size: cover;
+	background-position: center;
+}
+
+@mixin burgetBtn {
+	position: absolute;
+	right: 0;
+	height: 2px;
+	background-color: black;
+	transition: width 0.3s;
+	content: '';
+}
+
+@mixin cornerBorders {
+	&::before {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+		width: 15%;
+		border-top: 2px solid white;
+		border-bottom: 2px solid white;
+		border-left: 2px solid white;
+		content: '';
+	}
+
+	&::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 15%;
+		border-top: 2px solid white;
+		border-right: 2px solid white;
+		border-bottom: 2px solid white;
+		content: '';
+	}
+}
