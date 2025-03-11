@@ -39,17 +39,12 @@ const prepareDOMEvents = () => {
 			handleNav(navMobile);
 		}
 	});
-	setCurrentActiveButton();
 	navBarButtonsContainer.addEventListener('click', (event) => {
 		const clickedElement = event.target;
 
 		if (clickedElement.classList.contains('nav-items__item')) {
 			event.preventDefault();
 
-			const clickedButtonId = clickedElement.id;
-			updateActiveButton(clickedButtonId);
-
-			// Przenieś użytkownika do odpowiedniej sekcji lub strony
 			const href = clickedElement.getAttribute('href');
 			if (href.startsWith('#')) {
 				const targetElement = document.querySelector(href);
@@ -57,13 +52,14 @@ const prepareDOMEvents = () => {
 					targetElement.scrollIntoView({ behavior: 'smooth' });
 				}
 			} else {
-				// Jeśli link prowadzi do innej strony, przekieruj po krótkim opóźnieniu
-				setTimeout(() => {
-					window.location.href = href;
-				}, 100); // Opóźnienie pozwala na widoczność zmiany klasy active
+				window.location.href = href;
 			}
+
+			const clickedButtonId = clickedElement.id;
+			updateActiveButton(clickedButtonId);
 		}
 	});
+	setCurrentActiveButton();
 };
 
 const setCurrentActiveButton = () => {
@@ -92,16 +88,6 @@ const setCurrentActiveButton = () => {
 	});
 };
 
-const updateActiveButton = (clickedButtonId) => {
-	navBarButtons.forEach((button) => {
-		if (clickedButtonId === button.id) {
-			button.classList.add('active');
-		} else {
-			button.classList.remove('active');
-		}
-	});
-};
-
 const setCurrentYear = (yearElement) => {
 	fullYear = new Date().getFullYear();
 	yearElement.innerHTML = `${fullYear}`;
@@ -124,6 +110,16 @@ const handleNavBackground = (nav) => {
 	} else {
 		nav.style.backgroundColor = 'white';
 	}
+};
+
+const updateActiveButton = (clickedButtonId) => {
+	navBarButtons.forEach((button) => {
+		if (clickedButtonId === button.id) {
+			button.classList.add('active');
+		} else {
+			button.classList.remove('active');
+		}
+	});
 };
 
 document.addEventListener('DOMContentLoaded', main);
